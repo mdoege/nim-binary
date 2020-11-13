@@ -1,6 +1,6 @@
 ## A binary clock in Nim using SDL2 (fully binary)
 
-import sdl2, times, os, strutils
+import sdl2, times, strutils
 
 discard sdl2.init(INIT_EVERYTHING)
 
@@ -47,7 +47,7 @@ while runGame:
       render.fillRect(r)
 
   render.present
-  sleep(100)
+  delay(100)
 
 destroy render
 destroy window
